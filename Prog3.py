@@ -1,7 +1,3 @@
-num1 = int(input("Ingrese primer numero"))
-num2 = int(input("Ingrese segundo numero"))
-
-
 print("Menu")
 print("Operaciones: ")
 print("S. Suma")
@@ -9,23 +5,28 @@ print("R. Resta")
 print("M. Mutiplicacion")
 print("D. Division")
 print("A. Salir")
-opcion = int(input("¿Que opcion eliges?")
 
-if opcion.upper() == "S":
+opcion = input("¿Que opcion eliges?").upper()
+num1 = int(input("Ingrese primer numero"))
+num2 = int(input("Ingrese segundo numero"))
+
+
+if opcion == "S":
     result = num1 + num2
     print(result)
 
-elif opcion.upper() == "R":
+elif opcion == "R":
     result = num1 - num2
     print(result)
 
-elif opcion.upper() == "M":
+elif opcion == "M":
     result = num1 * num2
     print(result)
 
-elif opcion.upper() == "D":
+elif opcion == "D":
     result = num1/num2
     print(result)
 
-elif opcion.upper() == "A"
-    brake
+elif opcion == "A":
+    print("saliendo del programa")
+
